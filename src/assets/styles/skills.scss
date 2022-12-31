@@ -1,0 +1,68 @@
+@import "./base.scss";
+
+.skills {
+    position: relative;
+    font-size: 30px;
+    height: 200px;
+    background: #ffea5c;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 1rem;
+
+    &__header {
+        font-weight: 400;
+    }
+
+    &__text {
+        position: absolute;
+        white-space: nowrap;
+
+        &--left {
+            left: 0;
+            top: 6 rem;
+            animation: moveleft 30s linear infinite;
+            @keyframes moveleft {
+                0% {
+                    transform: translate3d(0, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(-50%, 0, 0);
+                }
+
+            }
+        }
+
+        &--right {
+            right: 0;
+            top: 7rem;
+            animation: moveright 30s linear infinite;
+            @keyframes moveright {
+                0% {
+                    transform: translate3d(0, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(50%, 0, 0);
+                }
+
+            }
+        }
+    }
+   @media(max-width:700px)
+   {
+    &{
+        height: 200px;
+    }
+    &_text{
+        font-size: 25px;
+        &--left{
+            top:5rem;
+        }
+        &--right{
+            top:6rem;
+        }
+    }
+   } 
+}

@@ -1,0 +1,79 @@
+@import url("https://fonts.google.com/share?selection.family=Poppins:wght@100");
+@import url("https://fonts.cdnfonts.com/css/noir-et-blanc");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*
+{
+    margin:0;
+    box-sizing:border-box;
+    &:after,
+    &:before
+    {
+        box-sizing:border-box;
+    }
+}
+html,
+body{
+    overflow-x: hidden;
+}
+body{
+    position: relative; 
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing:antialiased;
+
+   
+}
+button,
+input,
+textarea,
+select{
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap: break-word;
+}
+img,
+video,
+canvas,
+svg{
+    //max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+/*variables*/
+$green-color: #6cff8d;
+$dark-green-color: #6cff8c7a;
+$red-color: #f44336;
+$blue-color: #2196f3; 
+$yellow-color: #ffea5c;
+$darkish-blue: #060b11;
+$box-shadow-blue1: rgba(31,38,135,0.27);
+$box-shadow-blue2: rgba(31,38,135,0.67);
+/*------predefined classes------*/
+.section{
+    padding:1rem;
+    overflow: hidden;
+    min-height:100vh;
+    padding-top: 5rem;
+    @media(min-width:650px)
+{
+    padding: 5rem;
+}}
